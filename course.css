@@ -4,141 +4,154 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-padding-top: 10vh;
+  scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .course_section {
-  width: 100%;
-  min-height: 82vh;
+  height: 90vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: #f9f9f9;
-  padding: 2vw;
+  align-items: center;
+  /*
+  padding: 5vh 0;
+  */
+  background-color: #f4f4f4;
 }
 
 .course_container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
   width: 100%;
-  max-width: 800px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  */
   padding: 2vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course_container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.2);
 }
 
 .course_image img {
   width: 100%;
-  /* height: 200px; */
+  height: auto;
   border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 2vw;
 }
 
-.course_price_title {
-  text-align: center;
-  font-size: 1.8vw;
-  font-weight: bold;
+.course_price_title p {
+  font-size: 2.5vw;
   color: #333;
-  margin-bottom: 1vw;
-}
-
-.course_price, .currency {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw 0;
+  margin-top: 1vw;
+  font-weight: bold;
 }
 
 .course_price {
-  font-size: 1.5vw;
-  color: #333;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
 }
 
 .original_price p {
-  font-size: 1.8vw;
+  font-size: 3vw;
   font-weight: bold;
-  color: #f44336;
+  color: #333;
 }
 
 .original_price span {
-  color: #888;
-  font-size: 1.5vw;
-  margin-left: 0.5vw;
+  font-size: 3vw;
+  color: #999;
+  text-decoration: line-through;
 }
 
 .course_discount p {
-  font-size: 1.4vw;
-  color: #4caf50;
+  font-size: 3vw;
+  color: #d9534f;
   font-weight: bold;
 }
 
+.currency {
+  margin-top: 2vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .currency_title p {
-  font-size: 1.5vw;
+  font-size: 3vw;
   color: #333;
 }
 
 .select_curency select {
-  padding: 0.5vw;
-  font-size: 1.2vw;
+  padding: 1.5vw;
+  font-size: 2vw;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 1vw;
 }
 
 .buy_now_btn {
-  text-align: center;
   margin-top: 2vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .buy_now_btn button {
-  width: 90%;
-  max-width: 300px;
-  background-color: #ff9800;
+  background-color: indianred;
+  color: white;
+  padding: 1.5vw 3vw;
+  font-size: 1.2rem;
   border: none;
-  padding: 1vw 0;
-  border-radius: 50px;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1.5vw;
-  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.buy_now_btn button a {
   color: #fff;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .buy_now_btn button:hover {
-  background-color: #e68900;
-}
-
-.buy_now_btn a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
+  background-color: #d24d57;
 }
 
 @media (max-width: 720px) {
-  .course_price_title, 
-  .original_price p, 
-  .course_price span, 
-  .course_discount p, 
-  .currency_title p, 
-  .buy_now_btn button {
+  .course_container {
+    padding: 1.5rem;
+  }
+
+  .course_image img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .course_price_title p {
+    font-size: 2vw;
+  }
+  
+  .currency_title p {
     font-size: 4vw;
   }
   
-  .course_container {
-    padding: 4vw;
-  }
-
   .buy_now_btn button {
-    padding: 2vw 0;
-    max-width: 100%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
   }
   }
