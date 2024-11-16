@@ -288,3 +288,65 @@ footer form {
     margin-left: 0;
   }
 }
+
+@media (min-width: 1000px) {
+  .side_container {
+    width: 25%;
+    padding: 2vw 2vw;
+  }
+
+  .side_container h2 {
+    font-size: 2vw;  
+  }
+
+  .side_container ul li a {
+    font-size: 1.8vw;
+  }
+
+  .main_content {
+    margin-left: 25%;
+    padding: 2vw 4vw;
+  }
+
+  .main_content article {
+    padding: 2vw 3vw;
+  }
+
+  .main_content article h2 {
+    font-size: 3vw;
+  }
+
+  .main_content article p,
+  .main_content article ul,
+  .main_content article ol {
+    font-size: 1.6vw;
+  }
+
+  .main_content article h3 {
+    font-size: 2.5vw;
+  }
+
+  form {
+    padding: 2vw 3vw;
+  }
+
+  form h3 {
+    font-size: 2.5vw;
+  }
+
+  form p {
+    font-size: 1.8vw;
+  }
+
+  form label {
+    font-size: 1.8vw;
+  }
+
+  form button {
+    font-size: 1.8vw;
+  }
+
+  footer {
+    margin-left: 25%;
+  }
+}
