@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.log_in_form {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: formAnime 0.8s ease-out forwards;
+}
+
+.log_in_box {
+  padding: 4vw;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  animation: boxAnime 1s ease-in-out 0.5s forwards;
+}
+
+.log_in_box h1 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  animation: textAnime 2s ease-in-out infinite alternate;
+}
+
+.log_in_box input {
+  padding: 1.5vw;
+  border-radius: 20px;
+  margin: 1.5vw 0;
+  width: 80%;
+  border: 2px solid #ddd;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.log_in_box input:focus {
+  border-color: #ff416c;
+  transform: translateY(-5px);
+}
+
+.log_in_box button {
+  padding: 1.5vw 2vw;
+  border-radius: 25px;
+  background-color: #ff4b2b;
+  color: white;
+  font-size: 2vw;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  margin-top: 1.5vw;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.log_in_box button:hover {
+  background-color: #ff416c;
+  transform: scale(1.05);
+}
+
+@keyframes formAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes boxAnime {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes textAnime {
+  0% {
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 60px rgba(255, 0, 0, 1);
+  }
+}
+
+@media (max-width: 768px) {
+  .log_in_box {
+    padding: 6vw;
+  }
+
+  .log_in_box h1 {
+    font-size: 5vw;
+  }
+
+  .log_in_box input,
+  .log_in_box button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .log_in_box {
+    padding: 8vw;
+  }
+
+  .log_in_box h1 {
+    font-size: 6vw;
+  }
+
+  .log_in_box input,
+  .log_in_box button {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1140px) {
+  .log_in_box {
+    max-width: 900px;
+  }
+  
+  .log_in_box input[placeholder] {
+    font-size: 2vw;
+  }
+}

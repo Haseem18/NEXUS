@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./course.css">
+</head>
+
+<body>
+  
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./img/logo.png" alt="">
+      </div>
+      <input type="checkbox">
+      <div class="hamburger_lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="nav_links">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./course.html">Course</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav_btn">
+        <button>
+          <a href="./login.html">Log in</a>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="course_section">
+      <div class="course_container">
+        <div class="course_image">
+          <img src="./img/course.jpg" alt="">
+        </div>
+        <div class="course_price_title">
+          <p>PRICE</p>
+        </div>
+        <div class="course_price">
+          <div class="original_price">
+            <p>&#8377;4500 <span><strike>7000</strike></span></p>
+          </div>
+          <div class="course_discount">
+            <p>35.71% off</p>
+          </div>
+        </div>
+        <div class="currency">
+          <div class="currency_title">
+            <p>Choose Currency:</p>
+          </div>
+          <div class="select_curency">
+            <select>
+              <option value="INR">INR</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+        </div>
+        <div class="buy_now_btn">
+          <button>
+            <a href="">Buy Now</a>
+          </button>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  
+  <footer class="footer_section" id="contact">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need further information, please feel free to contact us. We’re here to help!</p>
+  
+    <form class="footer_contact_form">
+      <div class="form_group">
+        <label for="footer_name">Name</label>
+        <input type="text" id="footer_name" name="name" placeholder="Your name" required>
+      </div>
+  
+      <div class="form_group">
+        <label for="footer_email">Email</label>
+        <input type="email" id="footer_email" name="email" placeholder="Your email" required>
+      </div>
+  
+      <div class="form_group">
+        <label for="footer_message">Message</label>
+        <textarea id="footer_message" name="message" rows="4" placeholder="Your message" required></textarea>
+      </div>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./img/logo.png" alt="">
+      </div>
+      <input type="checkbox">
+      <div class="hamburger_lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="nav_links">
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+          <li>
+            <a href="./course.html">Course</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav_btn">
+        <button>
+          <a href="./login.html">Log in</a>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <form class="log_in_form">
+      <div class="log_in_box">
+        <div class="log_in_heading">
+          <h1>JOIN NEXUS</h1>
+        </div>
+        <div class="email">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="pass">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <div class="log_in_button">
+          <button>Log In</button>
+        </div>
+      </div>
+    </form>
+
+  </main>
+
+  <footer class="footer_section" id="contact">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need further information, please feel free to contact us. We’re here to help!</p>
+
+    <form class="footer_contact_form">
+      <div class="form_group">
+        <label for="footer_name">Name</label>
+        <input type="text" id="footer_name" name="name" placeholder="Your name" required>
+      </div>
+
+      <div class="form_group">
+        <label for="footer_email">Email</label>
+        <input type="email" id="footer_email" name="email" placeholder="Your email" required>
+      </div>
+
+      <div class="form_group">
+        <label for="footer_message">Message</label>
+        <textarea id="footer_message" name="message" rows="4" placeholder="Your message" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </footer>
+
+</body>
+
+</html>
