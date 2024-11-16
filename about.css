@@ -290,63 +290,81 @@ footer form {
 }
 
 @media (min-width: 1000px) {
-  .side_container {
-    width: 20%;  /* Smaller sidebar width */
-    padding: 1.5vw 2vw;  /* Smaller padding */
-  }
 
   .side_container h2 {
-    font-size: 1.8vw;  /* Smaller font size for sidebar header */
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+  }
+
+  .side_container ul {
+    margin-bottom: 1.5vw;
+  }
+
+  .side_container li {
+    padding: 0.7vw 0vw 0.7vw 1.5vw;
   }
 
   .side_container ul li a {
-    font-size: 1.6vw;  /* Smaller font size for links */
+    font-size: 1.2vw;
   }
 
   .main_content {
-    margin-left: 20%;  /* Smaller margin for main content */
-    padding: 1.5vw 3vw;  /* Smaller padding for main content */
+    padding-top: 1vw;
   }
 
   .main_content article {
-    padding: 1.5vw 2vw;  /* Smaller padding for article */
+    padding: 3vw;
+  }
+
+  .main_content article>* {
+    margin-bottom: 1vw;
   }
 
   .main_content article h2 {
-    font-size: 2.5vw;  /* Smaller font size for article headers */
+    font-size: 2vw;
   }
 
   .main_content article p,
   .main_content article ul,
   .main_content article ol {
-    font-size: 1.4vw;  /* Smaller font size for paragraphs and lists */
+    font-size: 1.3vw;
+    line-height: 1.3;
+  }
+
+  .main_content article img {
+    width: 40%;
+    margin-top: 1vw;
   }
 
   .main_content article h3 {
-    font-size: 2vw;  /* Smaller font size for subheaders */
+    font-size: 2vw;
+    margin-top: 0.6vw;
   }
 
   form {
-    padding: 1.5vw 2vw;  /* Smaller padding for form */
+    margin-top: 1vw;
+    padding: 1vw;
   }
 
   form h3 {
-    font-size: 2vw;  /* Smaller font size for form header */
+    font-size: 2vw;
+    margin-bottom: 0.6vw;
   }
 
   form p {
-    font-size: 1.5vw;  /* Smaller font size for form paragraph */
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
   }
 
   form label {
-    font-size: 1.5vw;  /* Smaller font size for form label */
+    margin-bottom: 0.6vw;
+    font-size: 1vw;
+    gap: 0.6vw;
   }
 
   form button {
-    font-size: 1.5vw;  /* Smaller font size for form button */
+    font-size: 1vw;
+    padding: 0.5vw 1vw;
+    border-radius: 8px;
   }
-
-  footer {
-    margin-left: 20%;  /* Smaller margin for footer */
   }
-}
