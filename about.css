@@ -291,62 +291,62 @@ footer form {
 
 @media (min-width: 1000px) {
   .side_container {
-    width: 25%;
-    padding: 2vw 2vw;
+    width: 20%;  /* Smaller sidebar width */
+    padding: 1.5vw 2vw;  /* Smaller padding */
   }
 
   .side_container h2 {
-    font-size: 2vw;  
+    font-size: 1.8vw;  /* Smaller font size for sidebar header */
   }
 
   .side_container ul li a {
-    font-size: 1.8vw;
+    font-size: 1.6vw;  /* Smaller font size for links */
   }
 
   .main_content {
-    margin-left: 25%;
-    padding: 2vw 4vw;
+    margin-left: 20%;  /* Smaller margin for main content */
+    padding: 1.5vw 3vw;  /* Smaller padding for main content */
   }
 
   .main_content article {
-    padding: 2vw 3vw;
+    padding: 1.5vw 2vw;  /* Smaller padding for article */
   }
 
   .main_content article h2 {
-    font-size: 3vw;
+    font-size: 2.5vw;  /* Smaller font size for article headers */
   }
 
   .main_content article p,
   .main_content article ul,
   .main_content article ol {
-    font-size: 1.6vw;
+    font-size: 1.4vw;  /* Smaller font size for paragraphs and lists */
   }
 
   .main_content article h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;  /* Smaller font size for subheaders */
   }
 
   form {
-    padding: 2vw 3vw;
+    padding: 1.5vw 2vw;  /* Smaller padding for form */
   }
 
   form h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;  /* Smaller font size for form header */
   }
 
   form p {
-    font-size: 1.8vw;
+    font-size: 1.5vw;  /* Smaller font size for form paragraph */
   }
 
   form label {
-    font-size: 1.8vw;
+    font-size: 1.5vw;  /* Smaller font size for form label */
   }
 
   form button {
-    font-size: 1.8vw;
+    font-size: 1.5vw;  /* Smaller font size for form button */
   }
 
   footer {
-    margin-left: 25%;
+    margin-left: 20%;  /* Smaller margin for footer */
   }
 }
