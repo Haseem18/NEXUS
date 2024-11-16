@@ -547,3 +547,14 @@ main {
   }
   
 }
+
+@media (min-width: 1000px) {
+  .hero_section .hero_left h1 {
+    font-size: 2vw;
+    line-height: 1.5;
+  }
+  
+  .hero_section .hero_left p {
+    font-size: 1.3vw;
+  }
+}
