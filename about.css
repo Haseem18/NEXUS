@@ -368,3 +368,7 @@ footer form {
     border-radius: 8px;
   }
   }
+
+.red {
+  accent-color: red;
+}
